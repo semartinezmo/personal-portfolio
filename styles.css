@@ -37,6 +37,7 @@ body {
 .welcome {
   background: linear-gradient(to bottom, var(--color-deep-blue), #000080);
 }
+
 #navbar {
   color: var(--color-text-light-gray);
   padding: 1rem 0;
@@ -75,6 +76,33 @@ body {
   font-size: 3rem;
 }
 
-.welcome-section p {
-  font-size: 1.5rem;
+.typing-text {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1096.28px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2em;
+}
+
+.social img {
+  height: 50px;
+  width: auto;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
 }
