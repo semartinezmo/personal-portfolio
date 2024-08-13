@@ -9,12 +9,16 @@
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Primary Colors */
   --color-deep-blue: #1a1a40;
   --color-dark-gray: #2c2c2c;
-  --color-nav-gradient-start: #1e3a8a; /* Deep Blue Start */
-  --color-nav-gradient-end: #3b82f6; /* Light Blue End */
+  --color-nav-gradient-start: #1e3a8a;
+  --color-nav-gradient-end: #3b82f6;
 
   /* Accent Colors */
   --color-red: #e63946;
@@ -24,10 +28,10 @@
   --color-light-gray: #e0e0e0;
 
   /* Text Colors */
-  --color-text-light: #f8f9fa; /* White */
-  --color-text-dark: #2c2c2c; /* Dark Gray */
-  --color-text-black: #000000; /* Black */
-  --color-text-light-gray: #d1d5db; /* Light Gray */
+  --color-text-light: #f8f9fa;
+  --color-text-dark: #2c2c2c;
+  /--color-text-black: #000000;
+  --color-text-light-gray: #d1d5db;
 }
 
 body {
@@ -57,8 +61,13 @@ body {
   cursor: pointer;
 }
 
-.nav-list li:hover {
-  color: var(--color-red); /* Red on hover */
+.nav-list li a {
+  text-decoration: none;
+  color: var(--color-text-light-gray);
+}
+
+.nav-list li a:hover {
+  color: var(--color-red);
 }
 
 .welcome-section {
@@ -72,6 +81,18 @@ body {
   text-align: center;
   color: var(--color-text-light);
   font-size: 4rem;
+}
+
+.colombia-flag .yellow {
+  color: #ffd700; /* Yellow color */
+}
+
+.colombia-flag .blue {
+  color: #0033a0; /* Blue color */
+}
+
+.colombia-flag .red {
+  color: #ce1126; /* Red color */
 }
 
 .typing-text {
@@ -130,7 +151,7 @@ body {
 
 .projects h2 {
   text-align: center;
-  color: #dcdcdc; /* Light Gray */
+  color: #dcdcdc;
   font-size: 4rem;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -192,4 +213,49 @@ body {
 
 .buttons-project button:hover {
   background-color: #2c3b4a;
+}
+
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #2b2b2b, #1a1a1a);
+  color: var(--color-light-gray);
+  border-top: 2px solid #3a5166;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-light-gray);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-light-gray);
+}
+
+.contact a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #1e7cd3;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact a:hover {
+  background-color: #2c3b4a;
+  transform: translateY(-5px);
+}
+
+.contact a:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
