@@ -259,3 +259,25 @@ body {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+  /* Adjust this value as needed */
+  .projects-container {
+    justify-content: center; /* Center the tiles on small screens */
+  }
+
+  .project-tile {
+    width: 90%; /* Adjust width to fit smaller screens */
+    max-width: 300px; /* Set a maximum width */
+    margin: 1rem; /* Add some margin around the tiles */
+  }
+
+  .project-tile img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .projects h2 {
+    font-size: 2.5rem; /* Reduce the font size of the heading */
+  }
+}
