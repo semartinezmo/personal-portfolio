@@ -32,9 +32,6 @@
 
 body {
   font-family: "Poppins", "Roboto", sans-serif;
-}
-
-.welcome {
   background: linear-gradient(to bottom, var(--color-deep-blue), #000080);
 }
 
@@ -123,4 +120,76 @@ body {
 
 .social img:active {
   transform: scale(0.9);
+}
+
+.projects {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #000080, #2b2b2b);
+  border-top: 2px solid #3a5166;
+}
+
+.projects h2 {
+  text-align: center;
+  color: #dcdcdc; /* Light Gray */
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #444444;
+  width: fit-content;
+  background-color: #2f2f2f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(58, 81, 102, 0.3);
+}
+
+.project-tile img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(0.95);
+}
+
+.project-tile h3 {
+  text-align: center;
+  color: #dcdcdc;
+  margin-top: 0.8rem;
+  font-weight: bolder;
+}
+
+.buttons-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-project button {
+  background-color: #3a5166;
+  color: #dcdcdc;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem 1rem;
+  font-size: 1.2rem;
+}
+
+.buttons-project button:hover {
+  background-color: #2c3b4a;
 }
